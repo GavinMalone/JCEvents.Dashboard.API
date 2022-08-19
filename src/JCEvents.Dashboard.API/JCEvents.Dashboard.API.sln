@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCEvents.Dashboard.API", "JCEvents.Dashboard.API\JCEvents.Dashboard.API.csproj", "{0711308D-50B1-40C4-9B36-51DF1A3C5CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JCEvents.Dashboard.API", "JCEvents.Dashboard.API\JCEvents.Dashboard.API.csproj", "{0711308D-50B1-40C4-9B36-51DF1A3C5CD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JCEvents.Dashboard.DataAccess", "JCEvents.Dashboard.DataAccess\JCEvents.Dashboard.DataAccess.csproj", "{2F7C6EAD-9277-4E11-B408-B1A37CC4256B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JCEvents.Dashboard.Data", "JCEvents.Dashboard.Data\JCEvents.Dashboard.Data.sqlproj", "{962407D9-4ED1-4FBE-8749-C1829E584AEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,16 @@ Global
 		{0711308D-50B1-40C4-9B36-51DF1A3C5CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0711308D-50B1-40C4-9B36-51DF1A3C5CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0711308D-50B1-40C4-9B36-51DF1A3C5CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7C6EAD-9277-4E11-B408-B1A37CC4256B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7C6EAD-9277-4E11-B408-B1A37CC4256B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7C6EAD-9277-4E11-B408-B1A37CC4256B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7C6EAD-9277-4E11-B408-B1A37CC4256B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962407D9-4ED1-4FBE-8749-C1829E584AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962407D9-4ED1-4FBE-8749-C1829E584AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962407D9-4ED1-4FBE-8749-C1829E584AEC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{962407D9-4ED1-4FBE-8749-C1829E584AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962407D9-4ED1-4FBE-8749-C1829E584AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962407D9-4ED1-4FBE-8749-C1829E584AEC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
