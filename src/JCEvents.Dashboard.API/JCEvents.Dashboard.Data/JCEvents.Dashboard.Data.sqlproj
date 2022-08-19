@@ -66,6 +66,8 @@
   <ItemGroup>
     <Build Include="Tables\Jobs.sql" />
     <Build Include="StoredProcedures\FindAllJobs.sql" />
+    <Build Include="StoredProcedures\FindAllStock.sql" />
+    <Build Include="Tables\Stock.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="JCEvents.Dashboard.Data.refactorlog" />

@@ -20,7 +20,7 @@ namespace JCEvents.Dashboard.API.Controllers
         [HttpGet(Name = "GetStockItems")]
         public IEnumerable<Stock> Get() => _repository.GetAllStockItems();
 
-        [HttpPost()]
-        public void Add(Stock item) => _repository.InsertStockItem(item);
+        //[HttpPost()]
+        //public void Add(Stock item) => _repository.InsertStockItem(item);
     }
 }

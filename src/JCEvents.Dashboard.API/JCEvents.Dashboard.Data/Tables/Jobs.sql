@@ -5,5 +5,6 @@
     [ContactInformation] NVARCHAR(MAX) NULL, 
     [Venue] NVARCHAR(MAX) NULL, 
     [EventDate] DATETIME NULL, 
-    [EventType] NVARCHAR(50) NULL
+    [EventType] NVARCHAR(50) NULL, 
+    [IsActive] BIT NULL DEFAULT 0
 )
