@@ -10,6 +10,6 @@ namespace JCEvents.Dashboard.DataAccess.Domain
         public string Venue { get; set; }
         public DateTime EventDate { get; set; }
         public JobType JobType { get; set; }
-
+        public bool IsActive { get; set; }
     }
 }

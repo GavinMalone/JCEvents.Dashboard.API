@@ -8,28 +8,17 @@ namespace JCEvents.Dashboard.DataAccess
 {
     public class Repository : IRepository
     {
-        public IEnumerable<Stock> GetAllStockItems()
-        {
-            throw new NotImplementedException();
-        }
+        public IEnumerable<Stock> GetAllStockItems() => ExecuteListQuery<Stock>("dbo.FindAllStock");
 
-        public IEnumerable<Job> GetJobs()
+        public IEnumerable<Job> GetJobs() => ExecuteListQuery<Job>("dbo.FindAllJobs");
+
+        private IList<T> ExecuteListQuery<T>(string storedProcedureName)
         {
             using (var connection = new SqlConnection(ConnectionString.Value))
             {
                 connection.Open();
-                return connection.Query<Job>("dbo.FindAllJobs", commandType: CommandType.StoredProcedure).ToList();
+                return connection.Query<T>(storedProcedureName, commandType: CommandType.StoredProcedure).ToList();
             }
-        }
-
-        public async void InsertJob(Job job)
-        {
-
-        }
-
-        public async void InsertStockItem(Stock stock) 
-        {
-
         }
     }
 }
