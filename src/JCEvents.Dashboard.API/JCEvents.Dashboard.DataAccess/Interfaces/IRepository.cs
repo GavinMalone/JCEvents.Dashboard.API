@@ -7,5 +7,7 @@ namespace JCEvents.Dashboard.DataAccess.Interfaces
     {
         IEnumerable<Stock> GetAllStockItems();
         IEnumerable<Job> GetJobs();
+
+        void CreateJob(Job job);
     }
 }
