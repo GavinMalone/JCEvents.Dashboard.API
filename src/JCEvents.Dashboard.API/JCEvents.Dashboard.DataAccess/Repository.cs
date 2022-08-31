@@ -12,6 +12,19 @@ namespace JCEvents.Dashboard.DataAccess
 
         public IEnumerable<Job> GetJobs() => ExecuteListQuery<Job>("dbo.FindAllJobs");
 
+        public void CreateJob(Job job) 
+        {
+            using (var connection = new SqlConnection(ConnectionString.Value))
+            {
+                connection.Open();
+                
+                var parameters = new { quotation = job.Quotation, title = job.Title, contactInformation = job.ContactInformation,
+                    venue = job.Venue, eventDate = job.EventDate, eventType = (int)job.EventType };
+
+                connection.Execute("dbo.CreateJob", parameters, commandType: CommandType.StoredProcedure);
+            }
+        }
+
         private IList<T> ExecuteListQuery<T>(string storedProcedureName)
         {
             using (var connection = new SqlConnection(ConnectionString.Value))

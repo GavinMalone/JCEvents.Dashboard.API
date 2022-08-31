@@ -19,5 +19,8 @@ namespace JCEvents.Dashboard.API.Controllers
 
         [HttpGet(Name = "GetJobs")]
         public IEnumerable<Job> Get() => _repository.GetJobs();
+
+        [HttpPost(Name = "CreateJob")]
+        public void Create(Job job) => _repository.CreateJob(job);
     }
 }
