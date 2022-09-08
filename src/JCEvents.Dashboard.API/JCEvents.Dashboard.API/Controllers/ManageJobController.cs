@@ -22,6 +22,17 @@ namespace JCEvents.Dashboard.API.Controllers
 
         [HttpPost(Name = "UpdateJob")]
         public void Update(Job job) => _repository.UpdateJob(job);
-         
+
+        [HttpGet]
+        [Route("[Action]")]
+        public void DeleteJob(string jobQuotation) => _repository.DeleteJob(jobQuotation);
+
+        [HttpGet]
+        [Route("[Action]")]
+        public IEnumerable<AssignedStock> RetrieveAssignedStock(string jobQuoation) => _repository.RetrieveAssignedStockItems(jobQuoation);
+
+        [HttpGet]
+        [Route("[Action]")]
+        public void RemoveAssignedStockItems(int stockId) => _repository.RemoveAssignedStockItems(stockId);
     }
 }
